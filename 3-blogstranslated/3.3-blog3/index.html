@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.150.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="thienlh@thienlu.com" />
+
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <title>Blog 3 :: Internship Report</title>
+
+    
+    <link href="../../css/nucleus.css?1765297109" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1765297109" rel="stylesheet">
+    <link href="../../css/hybrid.css?1765297109" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1765297109" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1765297109" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1765297109" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1765297109" rel="stylesheet">
+    <link href="../../css/theme.css?1765297109" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1765297109" rel="stylesheet">
+    
+    <link href="../../css/theme-workshop.css?1765297109" rel="stylesheet">
+    
+    
+
+    <script src="../../js/jquery-3.3.1.min.js?1765297109"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../3-blogstranslated/3.3-blog3/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1765297109"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1765297109"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/thienluhoan.github.io\/workshop-template\/";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1765297109"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/1-worklog/"
+  title="Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/">
+     <b> 1. </b> Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/1-worklog/1.1-week1/"
+  title="Week 1 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.1-week1/">
+     <b> 1.1. </b> Week 1 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.2-week2/"
+  title="Week 2 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.2-week2/">
+     <b> 1.2. </b> Week 2 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.3-week3/"
+  title="Week 3 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.3-week3/">
+     <b> 1.3. </b> Week 3 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.4-week4/"
+  title="Week 4 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.4-week4/">
+     <b> 1.4. </b> Week 4 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.5-week5/"
+  title="Week 5 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.5-week5/">
+     <b> 1.5. </b> Week 5 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.6-week6/"
+  title="Week 6 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.6-week6/">
+     <b> 1.6. </b> Week 6 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.7-week7/"
+  title="Week 7 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.7-week7/">
+     <b> 1.7. </b> Week 7 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.8-week8/"
+  title="Week 8 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.8-week8/">
+     <b> 1.8. </b> Week 8 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.9-week9/"
+  title="Week 9 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.9-week9/">
+    <b>1.9.</b>Week 9 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.10-week10/"
+  title="Week 10 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.10-week10/">
+    <b>1.10.</b>Week 10 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.11-week11/"
+  title="Week 11 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.11-week11/">
+    <b>1.11.</b>Week 11 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.12-week12/"
+  title="Week 12 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.12-week12/">
+    <b>1.12.</b>Week 12 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/2-proposal/"
+  title="Proposal"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../2-proposal/">
+     <b> 2. </b> Proposal 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/3-blogstranslated/"
+  title="Translated Blogs"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/">
+     <b> 3. </b> Translated Blogs 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/4-eventparticipated/"
+  title="Events Participated"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/">
+     <b> 4. </b> Events Participated 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4-3-event3/"
+  title="Event 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4-3-event3/">
+     <b> 4.3. </b> Event 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4-4-event4/"
+  title="Event 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4-4-event4/">
+     <b> 4.4. </b> Event 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4-5-event5/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4-5-event5/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4-6-event6/"
+  title=""
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4-6-event6/">
+     
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.1-workshop-overview/"
+  title="Introduction"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Introduction 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.2-prerequisites/"
+  title="Preparation Steps"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.2-prerequisites/">
+     <b> 5.2. </b> Preparation Steps 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-architecture/"
+  title="Architecture"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-architecture/">
+     <b> 5.3. </b> Architecture 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-deploy-backend/"
+  title="Deploy Backend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-deploy-backend/">
+     <b> 5.4. </b> Deploy Backend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.4-deploy-backend/5.4.1-sam-build/"
+  title="SAM Build"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-deploy-backend/5.4.1-sam-build/">
+     <b> 5.4.1 </b> SAM Build 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-deploy-backend/5.4.2-sam-deploy/"
+  title="SAM Deploy"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-deploy-backend/5.4.2-sam-deploy/">
+     <b> 5.4.2 </b> SAM Deploy 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-deploy-frontend/"
+  title="Deploy Frontend"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.5-deploy-frontend/">
+     <b> 5.5 </b> Deploy Frontend 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.6-test-application/"
+  title="Test Application"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.6-test-application/">
+     <b> 5.6. </b> Test Application 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.7-cleanup/"
+  title="Cleanup Resources"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.7-cleanup/">
+     <b> 5.7. </b> Cleanup Resources 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/6-self-evaluation/"
+  title="Self-Assessment"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../6-self-evaluation/">
+     <b> 6. </b> Self-Assessment 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/7-feedback/"
+  title="Sharing and Feedback"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../7-feedback/">
+     <b> 7. </b> Sharing and Feedback 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="https://thienluhoan.github.io/workshop-template/3-blogstranslated/3.3-blog3/"
+                  selected
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/3.3-blog3/"
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../'>Internship Report</a> > <a href='../../3-blogstranslated/'>Translated Blogs</a> > Blog 3
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#solution-overview">Solution overview</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#deploy-qwen3-in-amazon-bedrock-marketplace">Deploy Qwen3 in Amazon Bedrock Marketplace</a>
+      <ul>
+        <li><a href="#enable-reasoning-and-non-reasoning-responses-with-converse-api">Enable reasoning and non-reasoning responses with Converse API</a></li>
+        <li><a href="#perform-reasoning-and-function-calls-in-the-same-completion-using-the-invoke_model-api">Perform reasoning and function calls in the same completion using the Invoke_Model API</a></li>
+      </ul>
+    </li>
+    <li><a href="#deploy-qwen3-32b-with-sagemaker-jumpstart">Deploy Qwen3-32B with SageMaker JumpStart</a>
+      <ul>
+        <li><a href="#deploy-qwen3-32b-through-sagemaker-jumpstart-ui">Deploy Qwen3-32B through SageMaker JumpStart UI</a></li>
+        <li><a href="#deploy-qwen3-32b-using-the-sagemaker-python-sdk">Deploy Qwen3-32B using the SageMaker Python SDK</a></li>
+      </ul>
+    </li>
+    <li><a href="#clean-up">Clean up</a>
+      <ul>
+        <li><a href="#delete-the-amazon-bedrock-marketplace-deployment">Delete the Amazon Bedrock Marketplace deployment</a></li>
+        <li><a href="#delete-the-sagemaker-jumpstart-predictor">Delete the SageMaker JumpStart predictor</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 3
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="qwen3-family-of-reasoning-models-now-available-in-amazon-bedrock-marketplace-and-amazon-sagemaker-jumpstart">Qwen3 family of reasoning models now available in Amazon Bedrock Marketplace and Amazon SageMaker JumpStart</h1>
+<p>Today, we are excited to announce that <strong>Qwen3</strong>, the latest generation of large language models (LLMs) in the <strong>Qwen family</strong>, is available through <strong>Amazon Bedrock Marketplace</strong> and <strong>Amazon SageMaker JumpStart</strong>. With this launch, you can deploy the Qwen3 models—available in 0.6B, 4B, 8B, and 32B parameter sizes—to build, experiment, and responsibly scale your generative AI applications on AWS.</p>
+<p>In this post, we demonstrate how to get started with Qwen3 on Amazon Bedrock Marketplace and SageMaker JumpStart. You can follow similar steps to deploy the distilled versions of the models as well.</p>
+<hr>
+<h2 id="solution-overview">Solution overview</h2>
+<p><strong>Qwen3</strong> is the latest generation of LLMs in the Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:</p>
+<ul>
+<li>Unique support of seamless switching between thinking mode and non-thinking mode within a single model, providing optimal performance across various scenarios.</li>
+<li>Significantly enhanced in its reasoning capabilities, surpassing previous QwQ (in thinking mode) and Qwen2.5 instruct models (in non-thinking mode) on mathematics, code generation, and commonsense logical reasoning.</li>
+<li>Good human preference alignment, excelling in creative writing, role-playing, multi-turn dialogues, and instruction following, to deliver a more natural, engaging, and immersive conversational experience.</li>
+<li>Expertise in agent capabilities, enabling precise integration with external tools in both thinking and unthinking modes and achieving leading performance among open source models in complex agent-based tasks.</li>
+<li>Support for over 100 languages and dialects with strong capabilities for multilingual instruction following and translation.</li>
+</ul>
+<hr>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To deploy Qwen3 models, make sure you have access to the recommended instance types based on the model size. You can find these instance recommendations on Amazon Bedrock Marketplace or the SageMaker JumpStart console. To verify you have the necessary resources, complete the following steps:</p>
+<ol>
+<li>Open the <strong>Service Quotas</strong> console.</li>
+<li>Under <strong>AWS Services</strong>, select <strong>Amazon SageMaker</strong>.</li>
+<li>Check that you have sufficient quota for the required instance type for endpoint deployment.</li>
+<li>Make sure at least one of these instance types is available in your target AWS Region.</li>
+</ol>
+<p>If needed, request a quota increase and contact your AWS account team for support.</p>
+<hr>
+<h2 id="deploy-qwen3-in-amazon-bedrock-marketplace">Deploy Qwen3 in Amazon Bedrock Marketplace</h2>
+<p>Amazon Bedrock Marketplace gives you access to over 100 popular, emerging, and specialized <strong>foundation models (FMs)</strong> through Amazon Bedrock. To access Qwen3 in Amazon Bedrock, complete the following steps:</p>
+<ol>
+<li>On the Amazon Bedrock console, in the navigation pane under <strong>Foundation models</strong>, choose <strong>Model catalog</strong>.</li>
+<li>Filter for Hugging Face as a provider and choose a Qwen3 model. For this example, we use the Qwen3-32B model.</li>
+</ol>
+<p><img src="../../images/modelcatalog.jpeg" alt=""></p>
+<p>The model detail page provides essential information about the model’s capabilities, pricing structure, and implementation guidelines. You can find detailed usage instructions, including sample API calls and code snippets for integration.</p>
+<p>The page also includes deployment options and licensing information to help you get started with Qwen3-32B in your applications.</p>
+<ol>
+<li>To begin using Qwen3-32B, choose <strong>Deploy</strong>.</li>
+</ol>
+<p><img src="../../images/qwen32b_bedrock.jpeg" alt=""></p>
+<p>You will be prompted to configure the deployment details for Qwen3-32B. The model ID will be pre-populated.
+2. For <strong>Endpoint name</strong>, enter an endpoint name (between 1–50 alphanumeric characters).
+3. For <strong>Number of instances</strong>, enter a number of instances (between 1–100).
+4. For <strong>Instance type</strong>, choose your instance type. For optimal performance with Qwen3-32B, a GPU-based instance type like ml.g5-12xlarge is recommended.
+5. To deploy the model, choose <strong>Deploy</strong>.</p>
+<p><img src="../../images/deploymentdetails.jpeg" alt=""></p>
+<p>When the deployment is complete, you can test Qwen3-32B’s capabilities directly in the Amazon Bedrock playground.</p>
+<ol start="6">
+<li>Choose <strong>Open in playground</strong> to access an interactive interface where you can experiment with different prompts and adjust model parameters like temperature and maximum length.</li>
+</ol>
+<p>This is an excellent way to explore the model’s reasoning and text generation abilities before integrating it into your applications. The playground provides immediate feedback, helping you understand how the model responds to various inputs and letting you fine-tune your prompts for optimal results.You can quickly test the model in the playground through the UI. However, to invoke the deployed model programmatically with any Amazon Bedrock APIs, you must have the endpoint Amazon Resource Name (ARN).</p>
+<h3 id="enable-reasoning-and-non-reasoning-responses-with-converse-api">Enable reasoning and non-reasoning responses with Converse API</h3>
+<p>The following code shows how to turn reasoning on and off with Qwen3 models using the Converse API, depending on your use case. By default, reasoning is left on for Qwen3 models, but you can streamline interactions by using the <strong>/no_think</strong> command within your prompt. When you add this to the end of your query, reasoning is turned off and the models will provide just the direct answer. This is particularly useful when you need quick information without explanations, are familiar with the topic, or want to maintain a faster conversational flow. At the time of writing, the Converse API doesn’t support tool use for Qwen3 models. Refer to the Invoke_Model API example later in this post to learn how to use reasoning and tools in the same completion.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">import boto3</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">from botocore.exceptions import ClientError</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create a Bedrock Runtime client in the AWS Region you want to use.</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">client = boto3.client(&#34;bedrock-runtime&#34;, region_name=&#34;us-west-2&#34;)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Configuration</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">model_id = &#34;&#34; </span> <span style="color:#75715e"># Replace with Bedrock Marketplace endpoint arn</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Start a conversation with the user message.</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">user_message = &#34;hello, what is 1+1 /no_think&#34;</span> <span style="color:#75715e">#remove /no_think to leave default reasoning on</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">conversation = [</span>
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;role&#34;: </span><span style="color:#e6db74">&#34;user&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;content&#34;: [{&#34;text&#34;: </span><span style="color:#ae81ff">user_message}],</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">try</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Send the message to the model, using a basic inference configuration.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">response = client.converse(</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">modelId=model_id,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">messages=conversation,</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">inferenceConfig={&#34;maxTokens&#34;: 512, &#34;temperature&#34;: 0.5, &#34;topP&#34;: 0.9},</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Extract and print the response text.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#response_text = response[&#34;output&#34;][&#34;message&#34;][&#34;content&#34;][0][&#34;text&#34;]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#reasoning_content = response [&#34;output&#34;][&#34;message&#34;][&#34;reasoning_content&#34;][0][&#34;text&#34;]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#print(response_text, reasoning_content)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">print(response)</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#f92672">except (ClientError, Exception) as e</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">print(f&#34;ERROR: Can&#39;t invoke &#39;{model_id}&#39;. Reason: {e}&#34;)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">exit(1)</span>
+</span></span></code></pre></div><p>The following is a response using the Converse API, without default thinking:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>{<span style="color:#f92672">&#39;ResponseMetadata&#39;</span>: {<span style="color:#f92672">&#39;RequestId&#39;: &#39;f7f3953a-5747-4866-9075-fd4bd1cf49c4&#39;, &#39;HTTPStatusCode&#39;: 200, &#39;HTTPHeaders&#39;</span>: {<span style="color:#f92672">&#39;date&#39;: &#39;Tue, 17 Jun 2025 18:34:47 GMT&#39;, &#39;content-type&#39;: &#39;application/json&#39;, &#39;content-length&#39;: &#39;282&#39;, &#39;connection&#39;: &#39;keep-alive&#39;, &#39;x-amzn-requestid&#39;: &#39;f7f3953a-5747-4866-9075-fd4bd1cf49c4&#39;}, &#39;RetryAttempts&#39;: 0}, &#39;output&#39;</span>: {<span style="color:#f92672">&#39;message&#39;</span>: {<span style="color:#f92672">&#39;role&#39;: &#39;assistant&#39;, &#39;content&#39;</span>: [{<span style="color:#f92672">&#39;text&#39;</span>: <span style="color:#e6db74">&#39;\n\nHello! The result of 1 + 1 is **2**. 😊&#39;</span>}, {<span style="color:#f92672">&#39;reasoningContent&#39;</span>: {<span style="color:#f92672">&#39;reasoningText&#39;</span>: {<span style="color:#f92672">&#39;text&#39;: &#39;\n\n&#39;}}}]}}, &#39;stopReason&#39;: &#39;end_turn&#39;, &#39;usage&#39;</span>: {<span style="color:#f92672">&#39;inputTokens&#39;: 20, &#39;outputTokens&#39;: 22, &#39;totalTokens&#39;: 42}, &#39;metrics&#39;</span>: {<span style="color:#f92672">&#39;latencyMs&#39;</span>: <span style="color:#ae81ff">1125</span>}}
+</span></span></code></pre></div><p>The following is an example with default thinking on; the <think> tokens are automatically parsed into the reasoningContent field for the Converse API:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>{<span style="color:#f92672">&#39;ResponseMetadata&#39;</span>: {<span style="color:#f92672">&#39;RequestId&#39;: &#39;b6d2ebbe-89da-4edc-9a3a-7cb3e7ecf066&#39;, &#39;HTTPStatusCode&#39;: 200, &#39;HTTPHeaders&#39;</span>: {<span style="color:#f92672">&#39;date&#39;: &#39;Tue, 17 Jun 2025 18:32:28 GMT&#39;, &#39;content-type&#39;: &#39;application/json&#39;, &#39;content-length&#39;: &#39;1019&#39;, &#39;connection&#39;: &#39;keep-alive&#39;, &#39;x-amzn-requestid&#39;: &#39;b6d2ebbe-89da-4edc-9a3a-7cb3e7ecf066&#39;}, &#39;RetryAttempts&#39;: 0}, &#39;output&#39;</span>: {<span style="color:#f92672">&#39;message&#39;</span>: {<span style="color:#f92672">&#39;role&#39;: &#39;assistant&#39;, &#39;content&#39;</span>: [{<span style="color:#f92672">&#39;text&#39;</span>: <span style="color:#e6db74">&#39;\n\nHello! The sum of 1 + 1 is **2**. Let me know if you have any other questions or need further clarification! 😊&#39;</span>}, {<span style="color:#f92672">&#39;reasoningContent&#39;</span>: {<span style="color:#f92672">&#39;reasoningText&#39;</span>: {<span style="color:#f92672">&#39;text&#39;</span>: <span style="color:#e6db74">&#39;\nOkay, the user asked &#34;hello, what is 1+1&#34;. Let me start by acknowledging their greeting. They might just be testing the water or actually need help with a basic math problem. Since it\&#39;s 1+1, it\&#39;s a very simple question, but I should make sure to answer clearly. Maybe they\&#39;re a child learning math for the first time, or someone who\&#39;s not confident in their math skills. I should provide the answer in a friendly and encouraging way. Let me confirm that 1+1 equals 2, and maybe add a brief explanation to reinforce their understanding. I can also offer further assistance in case they have more questions. Keeping it conversational and approachable is key here.\n&#39;</span><span style="color:#f92672">}}}]}}, &#39;stopReason&#39;: &#39;end_turn&#39;, &#39;usage&#39;</span>: {<span style="color:#f92672">&#39;inputTokens&#39;: 16, &#39;outputTokens&#39;: 182, &#39;totalTokens&#39;: 198}, &#39;metrics&#39;</span>: {<span style="color:#f92672">&#39;latencyMs&#39;</span>: <span style="color:#ae81ff">7805</span>}}
+</span></span></code></pre></div><h3 id="perform-reasoning-and-function-calls-in-the-same-completion-using-the-invoke_model-api">Perform reasoning and function calls in the same completion using the Invoke_Model API</h3>
+<p>With Qwen3, you can stream an explicit trace and the exact JSON tool call in the same completion. Up until now, reasoning models have forced the choice to either show the chain of thought or call tools deterministically. The following code shows an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">messages = json.dumps( {</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;messages&#34;: </span>[
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;role&#34;: </span><span style="color:#e6db74">&#34;user&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;content&#34;: </span><span style="color:#e6db74">&#34;Hi! How are you doing today?&#34;</span>
+</span></span><span style="display:flex;"><span>        }, 
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;role&#34;: </span><span style="color:#e6db74">&#34;assistant&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;content&#34;: </span><span style="color:#e6db74">&#34;I&#39;m doing well! How can I help you?&#34;</span>
+</span></span><span style="display:flex;"><span>        }, 
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;role&#34;: </span><span style="color:#e6db74">&#34;user&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;content&#34;: </span><span style="color:#e6db74">&#34;Can you tell me what the temperate will be in Dallas, in fahrenheit?&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;tools&#34;: </span>[{
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;type&#34;: </span><span style="color:#e6db74">&#34;function&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;function&#34;: </span>{
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;name&#34;: </span><span style="color:#e6db74">&#34;get_current_weather&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;description&#34;: </span><span style="color:#e6db74">&#34;Get the current weather in a given location&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;parameters&#34;: </span>{
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;type&#34;: </span><span style="color:#e6db74">&#34;object&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;properties&#34;: </span>{
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;city&#34;: </span>{
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;type&#34;</span>:
+</span></span><span style="display:flex;"><span>                            <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;description&#34;</span>:
+</span></span><span style="display:flex;"><span>                            <span style="color:#e6db74">&#34;The city to find the weather for, e.g. &#39;San Francisco&#39;&#34;</span>
+</span></span><span style="display:flex;"><span>                    },
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;state&#34;: </span>{
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;type&#34;</span>:
+</span></span><span style="display:flex;"><span>                            <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;description&#34;</span>:
+</span></span><span style="display:flex;"><span>                            <span style="color:#e6db74">&#34;the two-letter abbreviation for the state that the city is in, e.g. &#39;CA&#39; which would mean &#39;California&#39;&#34;</span>
+</span></span><span style="display:flex;"><span>                    },
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">&#34;unit&#34;: </span>{
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;type&#34;: </span><span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#e6db74">&#34;description&#34;</span>:
+</span></span><span style="display:flex;"><span>                            <span style="color:#e6db74">&#34;The unit to fetch the temperature in&#34;</span>,
+</span></span><span style="display:flex;"><span>                        <span style="color:#f92672">&#34;enum&#34;: </span>[<span style="color:#e6db74">&#34;celsius&#34;</span>, <span style="color:#e6db74">&#34;fahrenheit&#34;</span>]
+</span></span><span style="display:flex;"><span>                    }
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;required&#34;: </span>[<span style="color:#e6db74">&#34;city&#34;</span>, <span style="color:#e6db74">&#34;state&#34;</span>, <span style="color:#e6db74">&#34;unit&#34;</span>]
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }],
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;tool_choice&#34;: </span><span style="color:#e6db74">&#34;auto&#34;</span>
+</span></span><span style="display:flex;"><span>}<span style="color:#ae81ff">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">response = client.invoke_model(</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">modelId=model_id, </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">body=body</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">print(response)</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">model_output = json.loads(response[&#39;body&#39;].read())</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">print(json.dumps(model_output, indent=2))</span>
+</span></span></code></pre></div><p>Response:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>{<span style="color:#f92672">&#39;ResponseMetadata&#39;</span>: {<span style="color:#f92672">&#39;RequestId&#39;: &#39;5da8365d-f4bf-411d-a783-d85eb3966542&#39;, &#39;HTTPStatusCode&#39;: 200, &#39;HTTPHeaders&#39;</span>: {<span style="color:#f92672">&#39;date&#39;: &#39;Tue, 17 Jun 2025 18:57:38 GMT&#39;, &#39;content-type&#39;: &#39;application/json&#39;, &#39;content-length&#39;: &#39;1148&#39;, &#39;connection&#39;: &#39;keep-alive&#39;, &#39;x-amzn-requestid&#39;: &#39;5da8365d-f4bf-411d-a783-d85eb3966542&#39;, &#39;x-amzn-bedrock-invocation-latency&#39;: &#39;6396&#39;, &#39;x-amzn-bedrock-output-token-count&#39;: &#39;148&#39;, &#39;x-amzn-bedrock-input-token-count&#39;: &#39;198&#39;}, &#39;RetryAttempts&#39;: 0}, &#39;contentType&#39;: &#39;application/json&#39;, &#39;body&#39;</span>: <span style="color:#ae81ff">&lt;botocore.response.StreamingBody object at 0x7f7d4a598dc0&gt;}</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;id&#34;: </span><span style="color:#e6db74">&#34;chatcmpl-bc60b482436542978d233b13dc347634&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;object&#34;: </span><span style="color:#e6db74">&#34;chat.completion&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;created&#34;: </span><span style="color:#ae81ff">1750186651</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;model&#34;: </span><span style="color:#e6db74">&#34;lmi&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;choices&#34;: </span>[
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;index&#34;: </span><span style="color:#ae81ff">0</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;message&#34;: </span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;role&#34;: </span><span style="color:#e6db74">&#34;assistant&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;reasoning_content&#34;: </span><span style="color:#e6db74">&#34;\nOkay, the user is asking about the weather in San Francisco. Let me check the tools available. There&#39;s a get_weather function that requires location and unit. The user didn&#39;t specify the unit, so I should ask them if they want Celsius or Fahrenheit. Alternatively, maybe I can assume a default, but since the function requires it, I need to include it. I&#39;ll have to prompt the user for the unit they prefer.\n&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;content&#34;: </span><span style="color:#e6db74">&#34;\n\nThe user hasn&#39;t specified whether they want the temperature in Celsius or Fahrenheit. I need to ask them to clarify which unit they prefer.\n\n&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;tool_calls&#34;: </span>[
+</span></span><span style="display:flex;"><span>          {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;id&#34;: </span><span style="color:#e6db74">&#34;chatcmpl-tool-fb2f93f691ed4d8ba94cadc52b57414e&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;type&#34;: </span><span style="color:#e6db74">&#34;function&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;function&#34;: </span>{
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;name&#34;: </span><span style="color:#e6db74">&#34;get_weather&#34;</span>,
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;arguments&#34;: &#34;{\&#34;location\&#34;: \&#34;San Francisco, CA\&#34;, \&#34;unit\&#34;: </span><span style="color:#ae81ff">\&#34;celsius\&#34;}&#34;</span>
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>        ]
+</span></span><span style="display:flex;"><span>      },
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;logprobs&#34;: </span><span style="color:#66d9ef">null</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;finish_reason&#34;: </span><span style="color:#e6db74">&#34;tool_calls&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;stop_reason&#34;: </span><span style="color:#66d9ef">null</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ],
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;usage&#34;: </span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;prompt_tokens&#34;: </span><span style="color:#ae81ff">198</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;total_tokens&#34;: </span><span style="color:#ae81ff">346</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;completion_tokens&#34;: </span><span style="color:#ae81ff">148</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;prompt_tokens_details&#34;: </span><span style="color:#66d9ef">null</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;prompt_logprobs&#34;: </span><span style="color:#66d9ef">null</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<h2 id="deploy-qwen3-32b-with-sagemaker-jumpstart">Deploy Qwen3-32B with SageMaker JumpStart</h2>
+<p>SageMaker JumpStart is a machine learning (ML) hub with FMs, built-in algorithms, and prebuilt ML solutions that you can deploy with just a few clicks. With SageMaker JumpStart, you can customize pre-trained models to your use case, with your data, and deploy them into production using either the UI or SDK.Deploying the Qwen3-32B model through SageMaker JumpStart offers two convenient approaches: using the intuitive SageMaker JumpStart UI or implementing programmatically through the SageMaker Python SDK. Let’s explore both methods to help you choose the approach that best suits your needs.</p>
+<h3 id="deploy-qwen3-32b-through-sagemaker-jumpstart-ui">Deploy Qwen3-32B through SageMaker JumpStart UI</h3>
+<p>Complete the following steps to deploy Qwen3-32B using SageMaker JumpStart:</p>
+<ol>
+<li>On the SageMaker console, choose <strong>Studio</strong> in the navigation pane.</li>
+<li>First-time users will be prompted to create a domain.</li>
+<li>On the SageMaker Studio console, choose <strong>JumpStart</strong> in the navigation pane.</li>
+</ol>
+<p>The model browser displays available models, with details like the provider name and model capabilities.</p>
+<p><img src="../../images/sjms_home.jpeg" alt=""></p>
+<ol start="4">
+<li>Search for Qwen3 to view the Qwen3-32B model card.</li>
+</ol>
+<p>Each model card shows key information, including:</p>
+<ul>
+<li>Model name</li>
+<li>Provider name</li>
+<li>Task category (for example, <strong>Text Generation</strong>)</li>
+<li><strong>Bedrock Ready</strong> badge (if applicable), indicating that this model can be registered with Amazon Bedrock, so you can use Amazon Bedrock APIs to invoke the model</li>
+</ul>
+<p><img src="../../images/qwenmodels.jpeg" alt=""></p>
+<ol start="5">
+<li>Choose the model card to view the model details page.</li>
+</ol>
+<p>The model details page includes the following information:</p>
+<ul>
+<li>The model name and provider information</li>
+<li>A <strong>Deploy</strong> button to deploy the model</li>
+<li><strong>About</strong> and <strong>Notebooks</strong> tabs with detailed information</li>
+</ul>
+<p>The <strong>About</strong> tab includes important details, such as:</p>
+<ul>
+<li>Model description</li>
+<li>License information</li>
+<li>Technical specifications</li>
+<li>Usage guidelines</li>
+</ul>
+<p><img src="../../images/qwen32bdescription.jpeg" alt=""></p>
+<p>Before you deploy the model, it’s recommended to review the model details and license terms to confirm compatibility with your use case.
+6. Choose <strong>Deploy</strong> to proceed with deployment.
+7. For <strong>Endpoint name</strong>, use the automatically generated name or create a custom one.
+8. For <strong>Instance type</strong>, choose an instance type (default: ml.g6-12xlarge).
+9. For <strong>Initial instance count</strong>, enter the number of instances (default: 1).</p>
+<p>Selecting appropriate instance types and counts is crucial for cost and performance optimization. Monitor your deployment to adjust these settings as needed. Under <strong>Inference type</strong>, <strong>Real-time inference</strong> is selected by default. This is optimized for sustained traffic and low latency.
+10. Review all configurations for accuracy. For this model, we strongly recommend adhering to SageMaker JumpStart default settings and making sure that network isolation remains in place.
+11. Choose <strong>Deploy</strong> to deploy the model.</p>
+<p><img src="../../images/deployendpoint.jpeg" alt=""></p>
+<p>The deployment process can take several minutes to complete.</p>
+<p>When deployment is complete, your endpoint status will change to <strong>InService</strong>. At this point, the model is ready to accept inference requests through the endpoint. You can monitor the deployment progress on the SageMaker console <strong>Endpoints</strong> page, which will display relevant metrics and status information. When the deployment is complete, you can invoke the model using a <strong>SageMaker runtime client</strong> and integrate it with your applications.</p>
+<h3 id="deploy-qwen3-32b-using-the-sagemaker-python-sdk">Deploy Qwen3-32B using the SageMaker Python SDK</h3>
+<p>To get started with Qwen3-32B using the SageMaker Python SDK, you must install the SageMaker Python SDK and make sure you have the necessary AWS permissions and environment set up. The following is a step-by-step code example that demonstrates how to deploy and use Qwen3-32B for inference programmatically:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span>!<span style="color:#ae81ff">pip install --force-reinstall --no-cache-dir sagemaker==2.235.2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">from sagemaker.serve.builder.model_builder import ModelBuilder </span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">from sagemaker.serve.builder.schema_builder import SchemaBuilder </span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">from sagemaker.jumpstart.model import ModelAccessConfig </span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">from sagemaker.session import Session </span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">import logging </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">sagemaker_session = Session()</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">artifacts_bucket_name = sagemaker_session.default_bucket() </span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">execution_role_arn = sagemaker_session.get_caller_identity_arn()</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Changed to Qwen32B model</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">js_model_id = &#34;huggingface-reasoning-qwen3-32b&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">gpu_instance_type = &#34;ml.g5.12xlarge&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">response = &#34;Hello, I&#39;m a language model, and I&#39;m here to help you with your English.&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">sample_input = {</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;inputs&#34;: </span><span style="color:#e6db74">&#34;Hello, I&#39;m a language model,&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;parameters&#34;: </span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;max_new_tokens&#34;: </span><span style="color:#ae81ff">128</span>, 
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;top_p&#34;: </span><span style="color:#ae81ff">0.9</span>, 
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;temperature&#34;: </span><span style="color:#ae81ff">0.6</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">sample_output = [{&#34;generated_text&#34;: response}]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">schema_builder = SchemaBuilder(sample_input, sample_output)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">model_builder = ModelBuilder( </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">model=js_model_id, </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">schema_builder=schema_builder, </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">sagemaker_session=sagemaker_session, </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">role_arn=execution_role_arn, </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">log_level=logging.ERROR </span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">) </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">model = model_builder.build() </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">predictor = model.deploy(</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">model_access_configs={js_model_id: ModelAccessConfig(accept_eula=True)}, </span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ae81ff">accept_eula=True</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">) </span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">predictor.predict(sample_input)</span>
+</span></span></code></pre></div><p>You can run additional requests against the predictor:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">new_input = {</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&#34;inputs&#34;: </span><span style="color:#e6db74">&#34;What is Amazon doing in Generative AI?&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&#34;parameters&#34;: {&#34;max_new_tokens&#34;: 64, &#34;top_p&#34;: 0.8, &#34;temperature&#34;: </span><span style="color:#ae81ff">0.7</span>},
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">prediction = predictor.predict(new_input)</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">print(prediction)</span>
+</span></span></code></pre></div><p>The following are some error handling and best practices to enhance deployment code:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Enhanced deployment code with error handling</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">import backoff</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">import botocore</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">import logging</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">logging.basicConfig(level=logging.INFO)</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">logger = logging.getLogger(__name__)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@<span style="color:#ae81ff">backoff.on_exception(backoff.expo, </span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#ae81ff">(botocore.exceptions.ClientError,),</span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#ae81ff">max_tries=3)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">def deploy_model_with_retries(model_builder, model_id)</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">model = model_builder.build()</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">predictor = model.deploy(</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">model_access_configs={model_id:ModelAccessConfig(accept_eula=True)},</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ae81ff">accept_eula=True</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">return predictor</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">except Exception as e</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">logger.error(f&#34;Deployment failed: {str(e)}&#34;)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">raise</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">def safe_predict(predictor, input_data)</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">return predictor.predict(input_data)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">except Exception as e</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">logger.error(f&#34;Prediction failed: {str(e)}&#34;)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ae81ff">return None</span>
+</span></span></code></pre></div><hr>
+<h2 id="clean-up">Clean up</h2>
+<p>To avoid unwanted charges, complete the steps in this section to clean up your resources.</p>
+<h3 id="delete-the-amazon-bedrock-marketplace-deployment">Delete the Amazon Bedrock Marketplace deployment</h3>
+<p>If you deployed the model using Amazon Bedrock Marketplace, complete the following steps:</p>
+<ol>
+<li>On the Amazon Bedrock console, under <strong>Foundation models</strong> in the navigation pane, choose <strong>Marketplace deployments</strong>.</li>
+<li>In the <strong>Managed deployments</strong> section, locate the endpoint you want to delete.</li>
+<li>Select the endpoint, and on the <strong>Actions</strong> menu, choose <strong>Delete</strong>.</li>
+<li>Verify the endpoint details to make sure you’re deleting the correct deployment:
+<ol>
+<li>Endpoint name</li>
+<li>Model name</li>
+<li>Endpoint status</li>
+</ol>
+</li>
+<li>Choose <strong>Delete</strong> to delete the endpoint.</li>
+<li>In the deletion confirmation dialog, review the warning message, enter <strong>confirm</strong>, and choose Delete to permanently remove the endpoint.</li>
+</ol>
+<h3 id="delete-the-sagemaker-jumpstart-predictor">Delete the SageMaker JumpStart predictor</h3>
+<p>The SageMaker JumpStart model you deployed will incur costs if you leave it running. Use the following code to delete the endpoint if you want to stop incurring charges. For more details, see <strong>Delete Endpoints and Resources</strong>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">predictor.delete_model()</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">predictor.delete_endpoint()</span>
+</span></span></code></pre></div><h2 id="conclusion">Conclusion</h2>
+<p>In this post, we explored how you can access and deploy the Qwen3 models using Amazon Bedrock Marketplace and SageMaker JumpStart. With support for both the full parameter models and its distilled versions, you can choose the optimal model size for your specific use case. Visit SageMaker JumpStart in <strong>Amazon SageMaker Studio</strong> or <strong>Amazon Bedrock Marketplace</strong> to get started. For more information, refer to <strong>Use Amazon Bedrock tooling with Amazon SageMaker JumpStart models</strong>, <strong>SageMaker JumpStart pretrained models</strong>, <strong>Amazon SageMaker JumpStart Foundation Models</strong>, <strong>Amazon Bedrock Marketplace</strong>, and <strong>Getting started with Amazon SageMaker JumpStart</strong>.</p>
+<p>The Qwen3 family of LLMs offers exceptional versatility and performance, making it a valuable addition to the AWS foundation model offerings. Whether you’re building applications for content generation, analysis, or complex reasoning tasks, Qwen3’s advanced architecture and extensive context window make it a powerful choice for your generative AI needs.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../3-blogstranslated/3.2-blog2/" title="Blog 2"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../4-eventparticipated/" title="Events Participated" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1765297110"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1765297110"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1765297110"></script>
+    <script src="../../js/jquery.sticky.js?1765297110"></script>
+    <script src="../../js/featherlight.min.js?1765297110"></script>
+    <script src="../../js/highlight.pack.js?1765297110"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1765297110"></script>
+    <script src="../../js/learn.js?1765297110"></script>
+    <script src="../../js/hugo-learn.js?1765297110"></script>
+
+    <link href="../../mermaid/mermaid.css?1765297110" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1765297110"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>
